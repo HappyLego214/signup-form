@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    margin: 0;
+}
+
+div {
+    border: solid 1px black;
+}
+
+.main-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.side-image {
+    flex: 1 1 25em;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1 1 70em;
+}
+
+.top-content {
+    flex: auto;
+}
+
+.bottom-content {
+    flex: auto;
+}
+
+.form-container {
+    flex: 1 1 15em;
+}
