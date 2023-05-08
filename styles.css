@@ -11,7 +11,14 @@ div {
     border: solid 1px black;
 }
 
+.logo-container {
+    height: 200px;
+    margin-top: 13%;
+    width: auto;
+}
+
 .main-container {
+    position: relative;
     display: flex;
     min-height: 100vh;
 }
@@ -102,5 +109,23 @@ div {
 
 input {
     margin-top: 10px;
-    width: 70%;
+    height: 2.5em;
+    width: 60%;
+}
+
+.errorActive {
+    color: red;
+}
+
+.error {
+    color: green;
+}
+
+
+.errorActive1 {
+    color: red;
+}
+
+.error1 {
+    color: green;
 }

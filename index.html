@@ -11,7 +11,8 @@
 <body>
     <div class="main-container">
         <div class="side-image">
-
+            <div class="logo-container">
+            </div>
         </div>
         <div class="main-content">
             <div class="top-content">
@@ -22,45 +23,45 @@
                 </div>
             </div>
             <div class="form-container">
-                <form class="form" action="">
+                <form  id="startForm" class="form" action="get">
                     <fieldset class="fieldset">
                         <legend class="legend">Let's Do This!</legend>
                             <div class="input-container">
-                                <label for="">First Name:</label>
-                                <input type="text" name="" id="">
+                                <label for="firstName">First Name:</label>
+                                <input type="text" class="firstName" name="firstName" id="firstName" required>
                                 <span></span>
                             </div>
                             <div class="input-container">
-                                <label for="">Last Name:</label>
-                                <input type="text" name="" id="">
+                                <label for="lastName">Last Name:</label>
+                                <input type="text" class="lastName" name="lastName" id="lastName" required>
                                 <span></span>
                             </div>
                             <div class="input-container">
-                                <label for="">Email:</label>
-                                <input type="text" name="" id="">
+                                <label for="email">Email:</label>
+                                <input type="email" class="email" name="email" id="email" required>
                                 <span></span>
                             </div>
                             <div class="input-container">
-                                <label for="">Phone Number:</label>
-                                <input type="text" name="" id="">
+                                <label for="tel">Phone Number:</label>
+                                <input type="tel" name="tel" id="tel">
                                 <span></span>
                             </div>
                             <div class="input-container">
-                                <label for="">Password:</label>
-                                <input type="text" name="" id="">
-                                <span></span>
+                                <label for="password">Password:</label>
+                                <input type="password" class="password" name="password" id="password" aria-live="polite" min="8" pattern="^(?=.*[\d])(?=.*[!@#$%^&*])[\w!@#$%^&*]{6,16}$" required>
+                                <span class="error"></span>
                             </div>
                             <div class="input-container">
-                                <label for="">Confirm Password:</label>
-                                <input type="text" name="" id="">
-                                <span></span>
+                                <label for="pswCheck">Confirm Password:</label>
+                                <input type="password" class="pswCheck" name="pswCheck" id="pswCheck" aria-live="polite" required>
+                                <span class="error1"></span>
                             </div>
                     </fieldset>
                 </form>
             </div>
             <div class="bottom-content">
                 <div class="button-container">
-                    <button class="button">
+                    <button type="submit" form="startForm" class="button">
                         Create Account
                     </button>
                     <p class="login">Already Have An Account? <a href="">Login Here</a></p>
