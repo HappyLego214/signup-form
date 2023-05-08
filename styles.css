@@ -17,24 +17,90 @@ div {
 }
 
 .side-image {
-    flex: 1 1 25em;
+    flex: 1 1 35em;
 }
 
 .main-content {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex: 1 1 70em;
+    flex: 1 1 65em;
 }
 
 .top-content {
-    flex: auto;
+    flex: 1 0 auto;
 }
 
 .bottom-content {
-    flex: auto;
+    flex: 1 0 auto;
 }
 
 .form-container {
-    flex: 1 1 15em;
+    flex: 1 0 5em;
+}
+
+.form {
+    margin: 15px;
+}
+
+.legend {
+    font-size: 25px;
+}
+
+.fieldset {
+    display: grid;
+    border: 0;
+    height: 25em;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 33% 33% 33%;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.top-content {
+    display: flex;
+    align-items: end;
+}
+
+.text-container {
+    height: 220px;
+    width: 50em;
+    margin-left: 30px;
+    font-size: larger;
+    line-height: 30px;
+}
+
+.line-1 {
+    margin-bottom: 0;
+}
+
+.line-2 {
+    margin-top: 0;
+}
+
+.line-3 {
+    padding-top: 25px;
+}
+
+.button-container {
+    height: 150px;
+    width: 350px;
+    margin-left: 30px;
+}
+
+.button {
+    margin-top: 15px;
+    height: 70px;
+    width: 230px;
+    font-size: larger;
+}
+
+input {
+    margin-top: 10px;
+    width: 70%;
 }
