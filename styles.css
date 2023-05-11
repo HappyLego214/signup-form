@@ -12,13 +12,12 @@ div {
 }
 
 .logo-container {
-    height: 200px;
-    margin-top: 13%;
+    height: 150px;
+    margin-top: 9em;
     width: auto;
 }
 
 .main-container {
-    position: relative;
     display: flex;
     min-height: 100vh;
 }
@@ -66,7 +65,7 @@ div {
 .input-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    padding-top: 20px;
 }
 
 .top-content {
@@ -113,19 +112,10 @@ input {
     width: 60%;
 }
 
-.errorActive {
-    color: red;
-}
-
-.error {
+.valid {
     color: green;
 }
 
-
-.errorActive1 {
+.invalid {
     color: red;
-}
-
-.error1 {
-    color: green;
 }

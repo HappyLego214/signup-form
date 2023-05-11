@@ -28,33 +28,33 @@
                         <legend class="legend">Let's Do This!</legend>
                             <div class="input-container">
                                 <label for="firstName">First Name:</label>
-                                <input type="text" class="firstName" name="firstName" id="firstName" required>
-                                <span></span>
+                                <input type="text" class="firstName credential" name="firstName" id="firstName" required>
+                                <span class="inputMsg"></span>
                             </div>
                             <div class="input-container">
                                 <label for="lastName">Last Name:</label>
-                                <input type="text" class="lastName" name="lastName" id="lastName" required>
-                                <span></span>
+                                <input type="text" class="lastName credential" name="lastName" id="lastName" required>
+                                <span class="inputMsg"></span>
                             </div>
                             <div class="input-container">
                                 <label for="email">Email:</label>
-                                <input type="email" class="email" name="email" id="email" required>
-                                <span></span>
+                                <input type="email" class="email credential" name="email" id="email" required>
+                                <span class="inputMsg"></span>
                             </div>
                             <div class="input-container">
                                 <label for="tel">Phone Number:</label>
-                                <input type="tel" name="tel" id="tel">
-                                <span></span>
+                                <input type="tel" name="tel credential" id="tel">
+                                <span class="inputMsg"></span>
                             </div>
                             <div class="input-container">
                                 <label for="password">Password:</label>
-                                <input type="password" class="password" name="password" id="password" aria-live="polite" min="8" pattern="^(?=.*[\d])(?=.*[!@#$%^&*])[\w!@#$%^&*]{6,16}$" required>
+                                <input type="password" class="password" name="password" id="password" aria-live="polite" min="8" pattern="^(?=.*[\d])(?=.*[!@#$%^&*])[\w!@#$%^&*]{6,}$" required>
                                 <span class="error"></span>
                             </div>
                             <div class="input-container">
                                 <label for="pswCheck">Confirm Password:</label>
                                 <input type="password" class="pswCheck" name="pswCheck" id="pswCheck" aria-live="polite" required>
-                                <span class="error1"></span>
+                                <span class="checkError"></span>
                             </div>
                     </fieldset>
                 </form>
