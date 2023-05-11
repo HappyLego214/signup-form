@@ -12,9 +12,22 @@ div {
 }
 
 .logo-container {
-    height: 150px;
-    margin-top: 9em;
+    position: relative;
+    display: flex;
+    height: 230px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 0;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 10em;
     width: auto;
+}
+
+.logo {
+    position: absolute;
+    top: -195px;
+    height: 700px;
+    width: 700px;
 }
 
 .main-container {
@@ -23,6 +36,9 @@ div {
 }
 
 .side-image {
+    background-image: url(/images/ex.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     flex: 1 1 35em;
 }
 
