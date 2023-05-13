@@ -94,7 +94,7 @@ input:focus {
     border-radius: 25px;
     margin: 25px;
     background-color: #323539;
-    flex: 1 0 25em;
+    flex: 1 0 20em;
 }
 
 .form {
