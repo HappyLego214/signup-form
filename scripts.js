@@ -38,7 +38,7 @@ function passwordInput() {
 }
 
 function passwordValid() {
-    if (pswCheck.value == password.value && !(password.value == "")) {
+    if (pswCheck.value == password.value && !(password.value == "" || password.value.valid)) {
         checkError.textContent = "Valid";
         checkError.classList.add("valid"); 
         checkError.classList.remove("invalid");
