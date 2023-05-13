@@ -53,18 +53,18 @@ function passwordValid() {
     }
 }
 
-function showError(foo, bar) {
-    if (foo.validity.valueMissing) {
-        bar.textContent = "Missing Required Value";
-    } else if (foo.validity.patternMismatch) {
-        bar.textContent = "Please Enter With The Required Pattern";
-    } else if (foo.validity.tooShort) {
-        bar.textContent = "Item Too Short";
-    } else if (foo.validity.tooLong) {
-        bar.textContent = "Item Too Long";
+function showError(input, message) {
+    if (input.validity.valueMissing) {
+        message.textContent = "Missing Required Value";
+    } else if (input.validity.patternMismatch) {
+        message.textContent = "Please Enter With The Required Pattern";
+    } else if (input.validity.tooShort) {
+        message.textContent = "Item Too Short";
+    } else if (input.validity.tooLong) {
+        message.textContent = "Item Too Long";
     } else {
-        bar.textContent = "Invalid Format";
+        message.textContent = "Invalid Format";
     }
-    bar.classList.add("invalid");
-    bar.classList.remove("valid");
+    message.classList.add("invalid");
+    message.classList.remove("valid");
 }
